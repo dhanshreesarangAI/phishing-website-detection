@@ -1,0 +1,47 @@
+🛡️ Phishing Website Detector
+ML-powered detection using Random Forest | Built by Dhanshree Sarang | Code-B Solutions Internship
+
+📊 Model Performance
+95.58%
+Accuracy
+99.12%
+ROC-AUC
+11,430
+Training Samples
+7
+Models Compared
+🔍 Check a Website
+Enter website features to predict if it is Phishing or Legitimate.
+
+URL Length
+75
+Hostname Length
+20
+Number of Dots
+3
+Number of Hyphens
+0
+Has HTTPS (1=Yes, 0=No)
+1
+Google Index (1=Yes, 0=No)
+1
+Page Rank (0-10)
+4
+Web Traffic
+3
+IP in URL (1=Yes, 0=No)
+0
+Number of Hyperlinks
+50
+DNS Record (1=Yes, 0=No)
+1
+Phishing Hints
+0
+🔮 Predict ⚠️ Load Phishing Sample ✅ Load Legit Sample
+🔌 API Endpoints
+GET /health → Health check
+POST /predict → Get prediction + probabilities
+Example:
+curl -X POST /predict -H "Content-Type: application/json" -d '{"google_index":0,"page_rank":0,"ip":1}'
+
+Built by Dhanshree Sarang | Data Science Intern at Code-B Solutions | Random Forest Model | 95.58% Accuracy
